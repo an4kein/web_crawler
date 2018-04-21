@@ -11,7 +11,7 @@ html = req.text
 
 
 
-padrao = re.search(r'href="\w+://\w+.\w+.\w+"', html)
+padrao = re.search(r'href=[\'"][\w:/\.]+', html)
 
 
 print padrao.group()
