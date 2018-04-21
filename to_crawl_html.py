@@ -11,7 +11,11 @@ html = req.text
 
 
 
-padrao = re.search(r'href=[\'"][\w:/\.]+', html)
+#padrao = re.search(r'href=[\'"][\w:/\.]+', html)
+padrao = re.findall(r'href=[\'"][\w:/\.]+', html)
 
 
-print padrao.group()
+#print padrao.group()
+print padrao
+
+
