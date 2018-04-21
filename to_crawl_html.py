@@ -16,6 +16,5 @@ padrao = re.findall(r'href=[\'"][\w:/\.]+', html)
 
 
 #print padrao.group()
-print padrao
-
-
+for link in padrao:
+    print link
